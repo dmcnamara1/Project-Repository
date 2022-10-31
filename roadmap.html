@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap</title>
+    <link rel="icon" href="/images/Profile Pic.jpg" type="image/x-icon" />
+</head>
+<style>
+    header{
+  width: 100%;
+  height: 210px;
+  text-align: center;
+  top: 0;
+  background-color: black;
+
+  }
+   
+header h1 {
+    margin-top: 10px;
+    size: 80%;
+}
+header nav {
+    text-align: center;
+    box-sizing: border-box;
+    
+   
+}
+header nav ul li {
+    display: inline-block;
+    margin-top: 0px;
+}
+header nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-right: 20px;
+}
+    
+    * {
+  box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+body {
+    background-image: linear-gradient(#22AAFA,#28E9C6);
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 10px 50px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid black;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+ }
+ 
+ @media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }}
+  footer ul {
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-gap: 24px;
+  justify-items: center;
+  margin: auto;
+  text-decoration: none;
+  width: 100%;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+
+footer div {
+  display: inline-flex;
+  padding-top: 20px;
+  width: 100%;
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+}
+
+
+  
+   
+</style>
+<body>
+    <header>
+        <li><a href=index.html><div class="logo">
+            <h1><img src="/images/Full Name Synpact Logo White copy.png" alt="cover-name" title="Logo" height="120" width="170"></h1></a></li></div>
+            <nav>
+                <ul>
+                    <li><a href="/about-us.html" title="about us">About us</a></li>
+                    <li><a href="/roadmap.html" title="roadmap">Roadmap</a></li>
+                    <li><a href="/more-synpact.html" title="more synpact">More Synpact</a></li>
+                    <li><a href="contact.html" title="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h2>Marketplace</h2>
+            <li>Create a marketplace and web-store where people can browse through ONLY sustainable and ethical products & services. 
+            </li>
+                <li>We develop our own line of sustainable products that have a positive impact in their industry/functionality. </li>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>Social Network</h2>
+            <li>Everyone has own profile and identity</li>
+                <li>Rank up and progress through a leveling system to earn rewards</li>
+                <li>Can share your own pictures and videos to showcase what your doing </li>
+          </div>
+        </div>
+          <div class="container left">
+          <div class="content">
+            <h2>Blockchain Integration</h2>
+                <li>Release NFTs correlated to certain causes</li>
+                <li>Can track donations and ensure legitimacy</li>
+                <li>Use $SYN coin for ecosystem + given as a reward </li>
+                <li>Rewarded soul bound tokens for involvement </li>
+          </div>
+        </div>
+          <div class="container right">
+          <div class="content">
+            <h2>Events</h2>
+            <li>  We host events to promote and raise awareness for a cause and donate all proceeds to it</li>
+                <li>Events will be sponsored by for profit companies and proceeds go to the nonprofits</li>
+          </div>
+        </div>
+    
+</body>
+<footer>
+    <div class="footer">
+        <ul>
+        <li><a href="/sitemap.html">Sitemap</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+        <li><a href="https://www.youtube.com/channel/UCylqeqk2m1e3TyPm83k9YKQ">Youtube</a></li>
+        <li><a href="https://www.instagram.com/synpct/?hl=en">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@synpact?lang=en">Tiktok</a></li>
+        </ul>
+        <img src="/images/Full Name Synpact Logo White.png" alt="white-logo" title="white-logo" height="100" width="100">
+        </div>
+  </footer>
+</html>

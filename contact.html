@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="/images/Profile Pic.jpg" type="image/x-icon" />
+    </head>
+    <style>
+        header{
+  width: 100%;
+  height: 210px;
+  text-align: center;
+  top: 0;
+  background-color: black;
+
+  }
+   
+header h1 {
+    margin-top: 10px;
+    size: 80%;
+}
+header nav {
+    text-align: center;
+    box-sizing: border-box;
+    
+   
+}
+header nav ul li {
+    display: inline-block;
+    margin-top: 0px;
+}
+header nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-right: 20px;
+}
+        h1 {
+          text-align: center;
+          color:white;
+          font-family:Arial, Helvetica, sans-serif;
+          text-decoration: underline;
+        }
+        form {
+          padding: 10px;
+          width: 500px;
+          margin-left: auto;
+          margin-right: auto;
+          font-family: arial;
+          background-color: white;
+        }
+        body{
+          font-family: arial;
+          background-image: linear-gradient(#22AAFA,#28E9C6);
+          margin: 0;
+
+      
+        }
+        fieldset{
+          border-color: black;
+          font-family: arial;
+        }
+    
+footer ul {
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-gap: 24px;
+  justify-items: center;
+  margin: auto;
+  text-decoration: none;
+  width: 100%;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+
+footer div {
+  display: inline-flex;
+  padding-top: 20px;
+  width: 100%;
+  background-color: black;
+  font-family: Menlo, monospace;
+}
+
+    
+  
+      </style>
+    </head>
+    <body>
+        <header>
+            <li><a href=index.html><div class="logo">
+                <h1><img src="/images/Full Name Synpact Logo White copy.png" alt="cover-name" title="Logo" height="120" width="170"></h1></a></li></div>
+                <nav>
+                    <ul>
+                        <li><a href="/about-us.html" title="about us">About us</a></li>
+                        <li><a href="/roadmap.html" title="roadmap">Roadmap</a></li>
+                        <li><a href="/more-synpact.html" title="more synpact">More Synpact</a></li>
+                        <li><a href="contact.html" title="contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+      <h1>Contact Us!</h1>
+      <form action="https://oim-apis.herokuapp.com/form" method="post">
+          <fieldset class="#field1">
+              <legend> <strong>Your Information</strong></legend>
+     
+         <div>
+        <div>
+          <label for="input-name"> Name: </label>
+          <input
+            type="text"
+            placeholder="Enter Your Name Here..."
+            id="input-name"
+            name="name"
+            size="25px"> 
+        </div>
+        <br>
+        <div>
+          <label for="input-email">Email: </label>
+          <input
+            type="text"
+            placeholder="Enter Your Email Here"
+            id="input-email"
+            name="email"
+            size="25px"
+          />
+        </div>
+        <br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend> <strong>Feedback</strong></legend>
+        </div>
+                  Are you interested in being a part of the Synpact community?:
+          </div>
+          <div>
+          <label><input type="radio" name="choice" value="great" /> Yes </label>
+          <label
+            ><input type="radio" name="choice" value="awesome" /> Maybe
+          </label>
+          <label> <input type="radio" name="choice" value="good" /> No </label>
+        </div>
+        <br>
+        <div>
+          <label for="comments"> Comments: </label>
+        </div>
+        <div>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="25"
+            rows="5"
+            placeholder="Enter your comment here"
+          >
+          </textarea>
+          <br>
+        </div>
+        <div>
+          <input type="checkbox" checked> Sign me up for email updates
+        </div>
+        <br>
+  <button type="Submit">
+      Submit
+  </button>
+  <button type="Reset">
+      Reset
+  </button>
+  </fieldset>
+      </form>
+    </body>
+    <br>
+    <footer>
+        <div class="footer">
+            <ul>
+            <li><a href="/sitemap.html">Sitemap</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="https://www.youtube.com/channel/UCylqeqk2m1e3TyPm83k9YKQ">Youtube</a></li>
+            <li><a href="https://www.instagram.com/synpct/?hl=en">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@synpact?lang=en">Tiktok</a></li>
+            </ul>
+            <img src="/images/Full Name Synpact Logo White.png" alt="white-logo" title="white-logo" height="100" width="100">
+            </div>
+      </footer>
+  </html>

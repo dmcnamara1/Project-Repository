@@ -171,14 +171,16 @@ footer div {
   background-color: black;
   font-family: Helvetica, sans-serif;
 }
-
-
-  
-   
+.zoomIn{
+  transform: scale(1.2);
+  z-index: 2;
+  border: 2px solid black;
+  transition: transform .8s;
+}
 </style>
 <body>
     <header>
-        <li><a href=index.html><div class="logo">
+      <li><a href=index.html><div class="logo">
             <h1><img src="/images/Full Name Synpact Logo White copy.png" alt="cover-name" title="Logo" height="120" width="170"></h1></a></li></div>
             <nav>
                 <ul>
@@ -237,4 +239,15 @@ footer div {
         <img src="/images/Full Name Synpact Logo White.png" alt="white-logo" title="white-logo" height="100" width="100">
         </div>
   </footer>
+  <script>
+    var content = document.querySelectorAll(".content");
+   for (var i = 0; i < content.length; i++) {
+     content[i].addEventListener('mouseover', function(){
+       this.classList.add("zoomIn");
+     });
+     content[i].addEventListener('mouseout', function(){
+       this.classList.remove("zoomIn");
+     });
+   }
+ </script>
 </html>

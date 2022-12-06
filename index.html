@@ -69,16 +69,25 @@ footer div {
   background-color: black;
   font-family: Menlo, monospace;
 }
-
- 
-   
+#cover-pic img{
+    display:none;
+}
+.next{
+    border: 1px solid;
+    margin-left: 5px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
 
 </style>
 <body>
     <header>
 
         <li><a href=index.html><div class="logo">
-            <h1><img src="/images/Full Name Synpact Logo White copy.png" alt="cover-name" title="Logo" height="120" width="170"></h1></a></li></div>
+            <a href="index.html">
+            <h1>
+                <img src="/images/Full Name Synpact Logo White copy.png" alt="cover-name" title="Logo" height="120" width="170"></h1></a></div></li>
             <nav>
                 <ul>
                     <li><a href="/about-us.html" title="about us">About us</a></li>
@@ -91,7 +100,10 @@ footer div {
     </header>
     <br>
       <div id="cover-pic"> 
-        <img src="/images/rollv2.png" alt="cover-pic" title="cover-pic" width="100%">
+        <img src="/images/Synpact Revamp (Twitter).png" class="bannerImg" alt="cover-pic" title="cover-pic" width="100%" style="display: block;">
+        <img src="/images/rollv2.png" class="bannerImg" alt="cover-pic" title="cover-pic" width="100%" style="display: none;">
+        <a class="next" onclick="nextSlide(-1)"> >>Prev </a>
+        <a class="next" onclick="nextSlide(1)">Next>> </a>
       </div> 
       <br>
       <footer>
@@ -107,4 +119,27 @@ footer div {
               </div>
         </footer>
 </body>
+<script>
+    //could not think of any really cool things to do so i just made slideshow of two cover images
+    let current = 1;
+    nextSlide(0); 
+
+    function nextSlide(n) {
+        current = current + n;
+        let i;
+        let imgs = document.getElementsByClassName("bannerImg");
+        if (current > imgs.length)
+        {
+            current = 1;
+        }
+        if (current < 1)
+        {
+            current = imgs.length;
+        }
+        for (i = 0; i < imgs.length; i++){
+            imgs[i].style.display = "none";
+        }
+        imgs[current-1].style.display = "block";
+    }
+</script>
 </html>

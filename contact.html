@@ -86,8 +86,6 @@ footer div {
   background-color: black;
   font-family: Menlo, monospace;
 }
-
-    
   
       </style>
     </head>
@@ -172,7 +170,55 @@ footer div {
       Reset
   </button>
   </fieldset>
+  <div id="messageDiv" style="display: block";>
+  <br>
+  "Email is empty"
+  <br>
+  Invalid email is emply"
+  <br>
+  "No option is selected"
+  <br>
+  "Comments is empty"
+  <br>
+  </div>
       </form>
+      <script>
+        //struggled to get this function to execute. Had right idea but I just could not figure out how to get it to work in the way I wanted to.
+        function validateForm() {
+          let msg = "";
+          let error = 0;
+          let name = document.getElementById("input-name");
+          if (name.value =="") {
+            msg += "Nam is empty <br>";
+            error =1;
+          }
+          let email = document.getElementById("input-emal");
+          if (email.value == ""){
+            msg += "Email is empty <br>";
+            error = 1;
+          } 
+          if(email.value.match) {
+            msg +- "Invalid email is empty <br>";
+            error = 1;
+          }
+          let choice = document.querySelector('input[name="choice"]:checked');
+          if (choice == null) {
+            msg += "No option is selected <br>";
+            error = 1;
+          }
+          let comments = doucment.getElementById("comments");
+          if (comments.value == ""){
+            msg += "Comments is empty <br>";
+            error = 1;
+          }
+        if (error == 1) {
+          let messageDiv = document.getElementById("messageDiv");
+          messageDiv.innerHTML = message;
+          messageDiv.style.display = "block";
+          return false;
+        }
+      }
+      </script>
     </body>
     <br>
     <footer>

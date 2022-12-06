@@ -112,7 +112,6 @@ footer div {
   font-family: Menlo, monospace;
 }
 
-
 </style>
 <body>
     <header>
@@ -139,31 +138,44 @@ footer div {
       <div class="rows">
         <div class="columns">
           <div class="profiles">
-            <img src="/images/jack.jpg" alt="Jack" title="Jack" style="width:100%">
+            <img src="/images/jack.jpg" alt="Jack" title="Jack" style="width:100%" onclick="imgChange(this, 'images/jack2.jpg')">
               <h2>Jack Wilcox</h2>
               <p class="role"> Video Director & Editor</p>
-              <p>wilcxjack@gmail.com</p>
-              <p><button class="button">Contact</button></p>
+              <p>
+              <span id="jack_email">wil*******@gmail.com</span>
+              <input type="button" onclick="showEmail('wilcxjack@gmail.com', 'jack_email')" value="Show Email">
+              </p>
+              <p>
+                <button class="button">Contact</button>
+              </p>
             </div>
           </div>
+
+        
       
         <div class="columns">
           <div class="profiles">
-            <img src="/images/dylan.jpg" alt="Dylan" title="Dylan" style="width:100%">
+            <img src="/images/dylan.jpg" alt="Dylan" title="Dylan" style="width:100%" onclick="imgChange(this, 'images/dylan2.jpg')">
               <h2>Dylan McNamara</h2>
               <p class="role">Founder and CEO</p>
-              <p>dmprestige@gmail.com</p>
-              <p><button class="button">Contact</button></p>
+              <p>
+              <span id="dmp_email">dmp*******@gmail.com</span>
+              <input type="button" onclick="showEmail('dmprestige@gmail.com', 'dmp_email')" value="Show Email" >
+              </p>
+              <button class="button"> Contact</button>
             </div>
           </div>
     
       
         <div class="columns">
           <div class="profiles">
-            <img src="/images/vin.jpg" alt="Vin" title="Vin" style="width:100%">
+            <img src="/images/vin.jpg" alt="Vin" title="Vin" style="width:100%" onclick="imgChange(this, 'images/vin2.jpg')">
               <h2>Vincent Ragonese</h2>
               <p class="role">Designer & Photographer</p>
-              <p>vinnyrags39@gmail.com</p>
+              <p>
+              <span id="vin_email">vin********@gmail.com</span>
+              <input type="button" onclick="showEmail('vinnyrags39@gmail.com', 'vin_email')" value="Show Email">
+              </p>
               <p><button class="button">Contact</button></p>
             </div>
           </div>
@@ -181,4 +193,14 @@ footer div {
             <img src="/images/Full Name Synpact Logo White.png" alt="white-logo" title="white-logo" height="100" width="100">
             </div>
       </footer>
+      <script>
+        function showEmail(email, span)
+        {
+          document.getElementById(span).innerHTML = email;
+        }
+        function imgChange(id, img)
+        {
+          id.src=img;
+        }
+      </script>
 </html>
